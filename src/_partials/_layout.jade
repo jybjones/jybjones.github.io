@@ -1,0 +1,38 @@
+doctype html
+html(lang="en-US")
+  head
+    meta(charset="utf-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+
+    include head-tags.jade
+
+    block title
+      title Jennifer YB Jones
+    //- // bower:css
+    //- // endbower
+    link(rel="stylesheet", href="lib/build.css")
+    link(rel="stylesheet", href="css/main.css")
+
+  body
+    include _header
+    include _carousel
+
+    .container
+      block content
+      include _about
+      include _skills
+      include _projects
+      include _resume
+      include _contact
+
+  footer
+      include _footer
+      include scripts
+      //- // build:js lib/build.js
+      //- // bower:js
+      //- // endbower
+      //- // endbuild
+
+      script(src="lib/build.js")
+      script(src="js/main.js")

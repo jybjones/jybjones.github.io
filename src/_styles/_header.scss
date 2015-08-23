@@ -1,0 +1,193 @@
+
+// header .navbar-default {
+//   // background-color: transparent;
+//   background-color: rgba(0, 0, 0, 0.45);
+//   border: none;
+//   color: #ff00d5;
+//   padding: 20px;
+// }
+#header{
+  float: left;
+  display: inline;
+  width: 100%;
+  position: relative;
+}
+
+/*--------.menu_area-------- */
+.menu_area{
+  position: absolute;
+  left:0;
+  right: 0;
+  top: 0;
+}
+.navbar-default {
+  background-color: transparent;
+  border-color: transparent;
+  margin-top: 20px;
+  padding: 12px 0px;
+}
+.past-main {
+  background-color: rgba(0,0,0,0.8);
+  margin-top: 0px;
+  padding:6px 0px;
+  -webkit-transition: all 0.5s ease 0s;
+  -o-transition: all 0.5s ease 0s;
+  transition: all 0.5s ease 0s;
+
+}
+#navbar{overflow-x: hidden;}
+
+.navbar-brand {
+    float: left;
+    height: 50px;
+    padding: 15px 15px;
+    font-size: 18px;
+    line-height: 20px;
+}
+
+#navbar-brand {
+  color: #fff !important;
+  font-size: 35px;
+  font-weight: bolder;
+  // font-family: 'Varela', sans-serif;
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+  background-color: transparent;
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.navbar-default .navbar-nav > li > a:hover{
+  text-transform: uppercase;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+  background-color: transparent;
+  color: #fff;
+}
+
+
+// header .navbar {
+//    padding-top: 25px;
+//     padding-bottom: 25px;
+//     -webkit-transition: padding-top .5s ease, padding-bottom .5s ease;
+//     -moz-transition: padding-top .5s ease, padding-bottom .5s ease;
+//     transition: padding-top .5s ease, padding-top .5s ease, padding-bottom .5s ease;
+// }
+// header .navbar-default {
+//   // background-color: transparent;
+//   background-color: rgba(0, 0, 0, 0.45);
+//   border: none;
+//   color: #ff00d5;
+//   padding: 20px;
+// }
+
+// a.navbar-brand-name {
+//   color: #ff00d5;
+//   font-weight: bold;
+// }
+
+// header .navbar-default .navbar-nav a {
+//   color: white;
+//   padding: 5px 8px;
+// }
+
+// header .navbar-default .navbar-nav a:hover {
+//   color: #ff00d5;
+// }
+// header .navbar-default .navbar-nav .active a {
+//   font-weight: 700;
+//   color: #ff00d5;
+//   background: transparent;
+//   border-bottom: 4px solid #ff00d5;
+//   text-shadow: none;
+// }
+
+// header .navbar-default .navbar-nav .active a:hover {
+//   color: #ff00d5;
+//   background: transparent;
+//   text-shadow: none;
+// }
+
+// /**  Navbar Brand **/
+
+// header .navbar-brand {
+//   background: url(../images/wisdompetlogo.svg);
+//   background-repeat: no-repeat;
+//   background-position: 15px 0;
+//   height: auto;
+//   color: #ff00d5;
+
+// }
+
+// header .navbar-brand h1 {
+//   // color: white;
+//   margin: 0;
+//   font-size: 1.8em;
+//   font-weight: 400;
+//   padding-left: 105px;
+//   color: #ff00d5;
+// }
+
+// header .navbar-brand span.subhead {
+//   display: block;
+//   font-family: "Roboto Slab", serif;
+//   font-size: .8em;
+//   font-weight: 200;
+//   color: #ff00d5;
+
+// }
+
+// /**  Navbar Toggle **/
+// header .navbar-toggle {
+//   background-color: #279182;
+// }
+
+// header .navbar-default .navbar-toggle .icon-bar {
+//   background-color: white;
+//   color: #ff00d5;
+// }
+
+// @media only screen
+// and (max-width: 768px) {
+//   header .navbar-collapse.in {
+//     background-color: rgba(0,0,0, .5);
+//   }
+// }
+// header .inbody {
+//   background: rgba(104,73,49,.9);
+// }
+
+// header .navbar.inbody {
+//   padding-top: 0;
+//   padding-bottom: 0;
+// }
+
+// header .navbar.inbody .navbar-nav {
+//   padding-top: 10px;
+//   color: #ff00d5
+// }
+// header .inbody .navbar-brand {
+//   background-size: 43px;
+//   background-position: top left;
+//   margin-top: 5px;
+//   padding-bottom: 0;
+//   margin-left: 10px;
+//   color: #ff00d5
+// }
+
+// header .inbody .navbar-brand h1 {
+//   font-size: 1.1em;
+//   padding-left: 38px;
+//   color: #ff00d5;
+// }
+
+// header .inbody .navbar-brand span.subhead {
+//   display: none;
+//   color: #ff00d5;
+// }
+
