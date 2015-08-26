@@ -1,3 +1,19 @@
+/* ----------------------------------------------------------- */
+  /*  2. Fixed Top Menubar
+  /* ----------------------------------------------------------- */
+jQuery(function($){
+
+  // For fixed top bar
+       $(window).scroll(function(){
+        if($(window).scrollTop() >100 /*or $(window).height()*/){
+            $(".navbar-fixed-top").addClass('past-main');
+        }
+    else{
+      $(".navbar-fixed-top").removeClass('past-main');
+      }
+    });
+
+
 $(function() {
 
   "use strict";
@@ -13,25 +29,25 @@ $(function() {
   $('.fullheight').css('height', wheight); //set to window tallness
 
 
-  //replace IMG inside carousels with a background image
-  $('#featured .item img').each(function() {
-    var imgSrc = $(this).attr('src');
-    $(this).parent().css({'background-image': 'url('+imgSrc+')'});
-    $(this).remove();
-  });
+  // //replace IMG inside carousels with a background image
+  // $('#featured .item img').each(function() {
+  //   var imgSrc = $(this).attr('src');
+  //   $(this).parent().css({'background-image': 'url('+imgSrc+')'});
+  //   $(this).remove();
+  // });
 
-  //adjust height of .fullheight elements on window resize
-  $(window).resize(function() {
-    wheight = $(window).height(); //get the height of the window
-    $('.fullheight').css('height', wheight); //set to window tallness
-  });
+  // //adjust height of .fullheight elements on window resize
+  // $(window).resize(function() {
+  //   wheight = $(window).height(); //get the height of the window
+  //   $('.fullheight').css('height', wheight); //set to window tallness
+  // });
 
 
   // Activate Scrollspy
 
-// $('#navbar').affix({
-//     offset: {top: 0}
-// });
+$('#navbar').affix({
+    offset: {top: 0}
+});
 
 $(document).ready(function(){
   $('body').scrollspy({
@@ -75,19 +91,18 @@ $(document).ready(function(){
     } //click function
   }); //smooth scrolling
 
-  //Automatically generate carousel indicators
-  for (var i=0; i < slideqty; i++) {
-    var insertText = '<li data-target="#featured" data-slide-to="' + i + '"';
-    if (i === randSlide) {
-      insertText += ' class="active" ';
-    }
-    insertText += '></li>';
-    $('#featured ol').append(insertText);
-  }
+//   //Automatically generate carousel indicators
+//   for (var i=0; i < slideqty; i++) {
+//     var insertText = '<li data-target="#featured" data-slide-to="' + i + '"';
+//     if (i === randSlide) {
+//       insertText += ' class="active" ';
+//     }
+//     insertText += '></li>';
+//     $('#featured ol').append(insertText);
+//   }
 
-  $('.carousel').carousel({
-    pause: false
-  });
-
+//   $('.carousel').carousel({
+//     pause: false
+});
 });
 });

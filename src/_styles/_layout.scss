@@ -6,7 +6,12 @@ body{
   font-weight: 300;
   font-size: 2em;
   position: relative;
-  background-color: gray;
+  background-color: cadetblue;
+}
+
+#section {
+  font-weight: bold;
+  background-color: purple;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -18,6 +23,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .page {
   padding: 50px 0;
+
 }
 
 .page h2 {
