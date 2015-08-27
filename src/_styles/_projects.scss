@@ -73,34 +73,34 @@ h2 {
   font-family:    "Montserrat";
   // letter-spacing: -1.5px;
   margin: 9px 0;
-  border-bottom: 1px solid $grey;
+  // border-bottom: 1px solid $grey;
   padding-bottom: 7px;
 }
 
 .no-gutter {padding-right: 0;}
 
-// .portfolio--project {
-//   @extend .column;
-// }
+.portfolio--project {
+  @extend .column;
+}
 
 .project_img {
   background: $white;
   display: block;
-  width:  100%;
+  width:  337px;
   border-left:   1px solid $grey;
   border-right:  1px solid $grey;
   border-top:    1px solid $grey;
   border-radius: 4px 4px 0 0;
   box-shadow: 0 -2px 3px 0 $shadow;
-  // img {
-  //   border-radius: 4px 4px 0 0;
-  //   border-bottom: 1px solid $lightgrey;
-  // }
+  img {
+    border-radius: 4px 4px 0 0;
+    border-bottom: 1px solid $lightgrey;
+  }
 }
 
 .project {
   // border-left:   1px solid  $grey;
-  // border-right:  1px solid $grey;
+  border-right:  1px solid $grey;
   border-bottom: 1px solid $grey;
   border-radius: 0 0 4px 4px;
   box-shadow: 0 0 2px 0 $shadow;
