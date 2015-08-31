@@ -1,3 +1,25 @@
+/* affix the navbar after scroll below header */
+$('#nav').affix({
+      offset: {
+        top: $('header').height()-$('#nav').height()
+      }
+});
+
+/* highlight the top nav as scrolling occurs */
+$('body').scrollspy({ target: '#nav' })
+
+/* smooth scrolling for scroll to top */
+$('.scroll-top').click(function(){
+  $('body,html').animate({scrollTop:0},1000);
+})
+
+/* smooth scrolling for nav sections */
+$('#nav .navbar-nav li>a').click(function(){
+  var link = $(this).attr('href');
+  var posi = $(link).offset().top;
+  $('body,html').animate({scrollTop:posi},700);
+});
+
 /* ----------------------------------------------------------- */
   /*  2. Fixed Top Menubar
   /* ----------------------------------------------------------- */
@@ -18,7 +40,7 @@ $(function() {
 
   "use strict";
 
-  var topoffset = 50; //variable for menu height
+  var topoffset = 70; //variable for menu height
   var slideqty = $('#featured .item').length;
   var wheight = $(window).height(); //get the height of the window
   var randSlide = Math.floor(Math.random()*slideqty);
@@ -28,32 +50,18 @@ $(function() {
 
   $('.fullheight').css('height', wheight); //set to window tallness
 
+//   // Activate Scrollspy
 
-  // //replace IMG inside carousels with a background image
-  // $('#featured .item img').each(function() {
-  //   var imgSrc = $(this).attr('src');
-  //   $(this).parent().css({'background-image': 'url('+imgSrc+')'});
-  //   $(this).remove();
-  // });
-
-  // //adjust height of .fullheight elements on window resize
-  // $(window).resize(function() {
-  //   wheight = $(window).height(); //get the height of the window
-  //   $('.fullheight').css('height', wheight); //set to window tallness
-  // });
-
-
-  // Activate Scrollspy
-
-$('#navbar').affix({
-    offset: {top: 0}
-});
+// $('#navbar').affix({
+//     offset: {top: 0}
+// });
 
 $(document).ready(function(){
   $('body').scrollspy({
     target: '#navbar',
     offset: topoffset
   });
+});
 
 
   // add inbody class
@@ -91,18 +99,7 @@ $(document).ready(function(){
     } //click function
   }); //smooth scrolling
 
-//   //Automatically generate carousel indicators
-//   for (var i=0; i < slideqty; i++) {
-//     var insertText = '<li data-target="#featured" data-slide-to="' + i + '"';
-//     if (i === randSlide) {
-//       insertText += ' class="active" ';
-//     }
-//     insertText += '></li>';
-//     $('#featured ol').append(insertText);
-//   }
+});
+});
 
-//   $('.carousel').carousel({
-//     pause: false
-});
-});
-});
+
