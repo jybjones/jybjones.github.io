@@ -1,31 +1,38 @@
-$('#portfolioFilter').on('click', 'button', function() {
+$(document).ready(function() {
 
-  var clicked = $(this);
+  function filterProjects(x, y) {
+    $("." + x).click(function() {
+      var $this = $(this);
 
-  if (!clicked.hasClass('active'))
-  {
-    var allButtons     = clicked.siblings(),
-      filter         = clicked.text(),
-      portfolioItems = $('#portfolioItems .portfolio-item')
-
-    allButtons.removeClass('active');
-    clicked.addClass('active');
-
-    if (filter == 'All')
-    {
-      portfolioItems.fadeIn();
-      return false;
-    }
-
-    portfolioItems.each(function() {
-      var item     = $(this),
-        category = item.attr('data-category');
-
-      if (filter == category)
-        item.fadeIn();
-      else
-        item.hide();
+      if ($this.hasClass("active-filter")) {
+        setTimeout(function() {
+          // Wait, then if clicking on an active filter, reset everything.
+          $(".portfolio").css("min-height", "1px");
+          $this.removeClass("active-filter");
+          $(".portfolio--project").fadeIn("fast");
+        }, 200);
+      } else {
+        setTimeout(function() {
+          // Wait to avoid double-click, then check height and set it.
+          var $height = $(".portfolio").css("height");
+          $(".portfolio").css("min-height", $height);
+          // reset other filters.
+          $(".filter").removeClass("active-filter");
+          $this.addClass("active-filter");
+          // fade out other projects and bring back what I want.
+          $(".portfolio--project").fadeOut("fast");
+          setTimeout(function() {
+            // wait a second so that we don't end up with awkward flashes.
+            $("." + y).fadeIn("fast");
+          }, 200);
+        }, 100);
+      }
     });
   }
-
+  filterProjects("All-project", "All");
+  filterProjects("UX-project", "UXP");
+  filterProjects("Startup-project", "Startup");
+  filterProjects("Misc-project", "Misc");
+  filterProjects("WD-project", "WD");
 });
+
