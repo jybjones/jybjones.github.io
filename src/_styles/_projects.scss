@@ -13,6 +13,8 @@ body {
   background: $lightgrey;
   font-size:   14px;
   font-family: "Open Sans";
+
+  justify-content: center;
   // background-color: cadetblue;
 
 }
@@ -42,6 +44,7 @@ img.img-responsive {
   display: block;
   // width: 25%;
   padding: 7px;
+
 }
 
 .portfolio, .filters {
@@ -109,6 +112,8 @@ h2 {
   background: $white;
   width: 337px;
   height: 172px;
+  display: flex;
+  justify-content: center;
 }
 
 .project_caption {
@@ -118,6 +123,7 @@ h2 {
   font-weight:  700;
   width: 337px;
   height: 171.333px;
+  justify-content: center;
 }
 
 .project_blurb {
@@ -172,3 +178,4 @@ h2 {
     text-align: center;
   }
 }
+

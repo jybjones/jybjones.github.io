@@ -1,3 +1,13 @@
+//////MOBILE NAVBar!/////
+
+$(".navbar-nav li a").click(function (event) {
+    // check if window is small enough so dropdown is created
+    var toggle = $(".navbar-toggle").is(":visible");
+    if (toggle) {
+      $(".navbar-collapse").collapse('hide');
+    }
+  });
+
 /* affix the navbar after scroll below header */
 $('#nav').affix({
       offset: {
@@ -19,6 +29,7 @@ $('#nav .navbar-nav li>a').click(function(){
   var posi = $(link).offset().top;
   $('body,html').animate({scrollTop:posi},700);
 });
+
 
 /* ----------------------------------------------------------- */
   /*  2. Fixed Top Menubar

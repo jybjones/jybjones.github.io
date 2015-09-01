@@ -18,7 +18,8 @@ module.exports = function(grunt) {
     },
     'gh-pages': {
       options: {
-        base: 'public'
+        base: 'public',
+        branch: 'master'
       },
         src: ['**/*']
       },
@@ -212,5 +213,7 @@ module.exports = function(grunt) {
     'connect',
     'watch'
   ]);
+
+  grunt.registerTask('deploy', ['build', 'gh-pages']);
 
 };

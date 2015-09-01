@@ -1,6 +1,13 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800|Roboto+Slab:400,100,300,700);
 
 /**  Basic Page CSS **/
+body,html{
+  overflow-x:hidden;
+}
+body {
+ font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden !important;
+}
 body{
   font-family: "Roboto Slab", sans-serif;
   font-weight: 300;
@@ -9,6 +16,11 @@ body{
   background-color: cadetblue;
 }
 
+ul{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 #section {
   font-weight: bold;
   background-color: purple;
@@ -30,5 +42,45 @@ h1, h2, h3, h4, h5, h6 {
   text-align: center;
   margin-bottom: 30px;
 }
+
+// #status {
+//   width:200px;
+//   height:200px;
+//   position:absolute;
+//   left:50%; /* centers the loading animation horizontally one the screen */
+//   top:50%; /* centers the loading animation vertically one the screen */
+//   // background-image:url(img/status.GIF); path to your loading animation
+//   // background-repeat:no-repeat;
+//   // background-position:center;
+//   margin:-100px 0 0 -100px; /* is width and height divided by two */
+// }
+
+// /*scrol to top*/
+
+// .scrollToTop {
+//   bottom: 60px;
+//   display: none;
+//   font-size: 32px;
+//   font-weight: bold;
+//   height: 50px;
+//   position: fixed;
+//   right: 50px;
+//   text-align: center;
+//   text-decoration: none;
+//   width: 50px;
+//   z-index: 9999;
+//   color: #fff;
+//   -webkit-transition: all 0.5s;
+//   -moz-transition: all 0.5s;
+//   -ms-transition: all 0.5s;
+//   -o-transition: all 0.5s;
+//   transition: all 0.5s;
+
+// }
+// .scrollToTop:hover, .scrollToTop:focus{
+//   text-decoration: none;
+//   outline: none;
+// }
+
 
 
