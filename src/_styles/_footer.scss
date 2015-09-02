@@ -11,6 +11,19 @@ footer {background: #000;}
   border-radius: 50%;
   border: 2px solid;
   &:hover,
-  &:focus {color: red;}
+  &:focus {color: #ff00d5;}
 }
 
+.soc-media-ul a {
+  text-align: center;
+  text-decoration: none;
+}
+
+footer {padding: 1.5em 0;}
+// form {
+//   @media screen and (max-width: 768px) and (min-width: 485px) {max-width: 70%;}
+// }
+
+.footer_left p {
+
+}
