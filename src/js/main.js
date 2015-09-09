@@ -8,6 +8,10 @@ $(".navbar-nav li a").click(function (event) {
     }
   });
 
+// $('.navbar-nav').on('click', 'li a', function() {
+//     $('.navbar-collapse').collapse('hide');
+//   });
+
 /* affix the navbar after scroll below header */
 $('#nav').affix({
       offset: {
@@ -61,11 +65,6 @@ $(function() {
 
   $('.fullheight').css('height', wheight); //set to window tallness
 
-//   // Activate Scrollspy
-
-// $('#navbar').affix({
-//     offset: {top: 0}
-// });
 
 $(document).ready(function(){
   $('body').scrollspy({
