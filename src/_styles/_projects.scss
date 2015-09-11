@@ -143,6 +143,7 @@ h2 {
   font-size:    1em;
   font-family:  "Montserrat";
   font-weight:  700;
+  font-weight: bold;
   // width: 337px;
   // height: 171.333px;
   justify-content: center;
@@ -168,7 +169,7 @@ h2 {
   padding: 8px 8px;
   clear: both;
   border-radius: 4px;
-  &:hover {background: darken($brand, 20%);}
+  &:hover {background: darken($lightgrey, 20%);}
 }
 .blurb--link {
     padding: 8px 8px;
@@ -194,6 +195,8 @@ h2 {
     background-image: none;
     border: 1px solid transparent;
     border-radius: 4px;
+    background-color: $brand;
+    color: white;
 }
 .active-filter {
   color: $brand;
@@ -209,15 +212,21 @@ h2 {
   .portfolio--project {width: 50%;}
   .project_caption {font-size:.8em;
   font-family:  "Montserrat";
-  font-weight:  500;}
+  font-weight:  bold;}
   .project_img {
     // max-height: 10em;
     .project {font-size: 14px;}
-    .btn{font-size: 14px;}
+    .btn{font-size: 10px;}
     overflow: hidden;
     border-bottom: 1px solid $lightgrey;
 
   }
+}
+@media (max-width: 824px){
+  .project_blurb {
+    font-weight: bold;
+    text-align: center;
+}
 }
 
 @media (max-width: 600px) {
