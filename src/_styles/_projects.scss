@@ -207,10 +207,16 @@ h2 {
 
 @media (max-width: 824px) {
   .portfolio--project {width: 50%;}
+  .project_caption {font-size:.8em;
+  font-family:  "Montserrat";
+  font-weight:  500;}
   .project_img {
-    max-height: 10em;
+    // max-height: 10em;
+    .project {font-size: 14px;}
+    .btn{font-size: 14px;}
     overflow: hidden;
     border-bottom: 1px solid $lightgrey;
+
   }
 }
 
