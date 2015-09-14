@@ -1,31 +1,15 @@
 .skills {
   background-color: white; }
 
-// .img {
-//   max-width: 120px;
-//   height: 120px;
-//   margin: 30px auto 15px; }
+.img {
+  max-width: 120px;
+  height: 120px;
+  margin: 30px auto 15px; }
 
   .icon {
   max-width: 120px;
   height: 120px;
   margin: 30px auto 15px; }
-
-@media (max-width: 520px) {
-  .icon {
-    top: 1px;
-    bottom: -1px;
-    display: inline-block;
-    overflow-x: hidden;
-    overflow-y: hidden;
-    width: 75%;
-    margin: 15px;
-    max-height: 85px;
-    // float: none;
-    // clear: none;
-  }
-}
-
 
 // .clearfix:before,
 // .clearfix:after{content:".";display:block;height:0;overflow:hidden}
@@ -38,16 +22,16 @@
 // //    //  display: flex;
 // //    // justify-content: center;
 // // }
-// .rowSkills {
-//   display: inline-block;
-//   width: auto;
-//   margin: 10px;
-//   &:after {
-//   content: "";
-//   display: table;
-//   clear: both;
-//   }
-// }
+.rowSkills {
+  display: inline-block;
+  width: auto;
+  margin: 10px;
+  &:after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+}
 
 
 // body.skills{
@@ -287,7 +271,18 @@
 // //   .hero-subhead {
 // //     margin-bottom: 34px;
 // //   }
-
+@media (max-width: 520px) {
+  .icon {
+    top: 1px;
+    bottom: -1px;
+    display: inline-block;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    width: 75%;
+    float: none;
+    clear: none;
+  }
+}
 // //   .portfolio {
 // //     left: 0px;
 // //     top: 0px;
