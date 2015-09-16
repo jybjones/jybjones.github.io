@@ -2,6 +2,10 @@ p {
   font-size: 18px;
 }
 
-#about {
+.about {
 
+  background-color: $white;
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,.3);
+  padding: 15px;
+  text-align: center;
 }
