@@ -1,4 +1,4 @@
-$primary: limegreen;
+$primary: rgba(0, 182, 138, 1);
 $white:     #FFFFFF;
 $grey:      #BBBBBB;
 $darkgrey:  #333333;
@@ -25,6 +25,13 @@ $container-gutter: 20px;
   margin-left:  auto;
   margin-right: auto;
 }
+
+// Cell phones: screen width less than 768px
+// Tablets: screen width greater than 768px and less than 992px.
+// Normal Desktops: screen width greater than 992px and less than 1200px.
+// Extra large displays: screen width greater than 1200px.
+
+
 
 /* The spacing between columns. */
 $column-gutter-width: 4%;

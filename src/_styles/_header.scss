@@ -35,6 +35,17 @@ header .navbar-default {
   transition: all 0.5s ease 0s;
 
 }
+
+.navbar-default .navbar-brand:focus, .navbar-default .navbar-brand:hover {
+    color: white;
+    background-color: transparent;
+    text-shadow: 1px 1px 2px #000;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 1s;
+          transition: 1s;
+}
 #navbar{overflow-x: hidden;}
 
 // .navbar-brand {
@@ -46,19 +57,22 @@ header .navbar-default {
 // }
 
 .navbar-default .navbar-brand{
-  font-size: 24px;
+  font-size: 20px;
   color: #ff00d5;
   font-weight: 600;
   padding: 4px;
+  text-shadow: 1px 1px 2px #000;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 1s;
+          transition: 1s;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
   background-color: transparent;
 }
-// .navbar .navbar-default .avbar-fixed-top .inbody .past-main {
-//   height: 70px;
-//   font-size: 86px;
-// }
+
 
 .navbar-default .navbar-nav > li > a {
   color: #fff;
@@ -72,7 +86,12 @@ header .navbar-default {
 .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
   background-color: transparent;
   color: #ff00d5;
-  // color: #fff;
+  text-shadow: 1px 1px 2px #000;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 1s;
+          transition: 1s;
 }
 @media (max-width: 767px) {
   .main_nav {

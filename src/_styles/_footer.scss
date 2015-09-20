@@ -2,6 +2,8 @@ footer {background: #000;}
 .soc-media-ul {
   display: flex;
   justify-content: center;
+   -webkit-transition: 1s;
+          transition: 1s;
 }
 .soc-media-ul li:not(:first-child) a {margin-left: 1em;}
 .soc-media-ul a {
@@ -27,3 +29,13 @@ footer {padding: 1.5em 0;}
 .footer_left p {
 
 }
+
+
+.soc-media-ul a:hover {
+  text-shadow: 1px 1px 2px #ff00d5;
+  -webkit-transform: scale(1.2);
+      -ms-transform: scale(1.2);
+          transform: scale(1.2);
+  -webkit-transition: 1s;
+          transition: 1s; }
+
