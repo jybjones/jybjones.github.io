@@ -58,13 +58,13 @@ section#projects
                 .project_blurb
                   | Mosey is an SF startup where people create adventures.
                   .clearfix
-                  a.blurb--link(href='https://www.mosey.com/', target='_blank') View Project
-                  button.btn.btn-default.action(data-toggle='modal' data-target='#modalOtakuUx') View Details
+                  a.blurb--link(href='https://www.mosey.com/', target='_blank') View Site
+                  button.btn.btn-default.action(data-toggle='modal' data-target='#modalmoseyUx') View Details
 
         //.row
         .col-xs-12.col-md-4-centered.portfolio-item.portfolio--project.Startup
           .project_img
-            img.img-responsive(src='assets/img/projects/startup/plumeLanding.png', alt='UX work thumbnail')
+            img.img-responsive(src='assets/img/projects/startup/plume1.jpg', alt='UX work thumbnail')
             .project
               .content.text-align-center
               .project_caption Plume
@@ -72,7 +72,7 @@ section#projects
                   | Women's health startup focused on data and wearable technology.
                   .clearfix
                   //- a.blurb--link(href='#', target='_blank') View Project
-                  button.btn.btn-default.action(data-toggle='modal' data-target='#modalOtakuUx') View Details
+                  button.btn.btn-default.action(data-toggle='modal' data-target='#modalplumeUx') View Details
 
         //.row
         .col-xs-12.col-md-4-centered.portfolio-item.portfolio--project.Startup
@@ -85,7 +85,7 @@ section#projects
                   | wāv app is a new social site to meet people nearby, download on iTunes!
                   .clearfix
                   a.blurb--link(href='http://blog.agilityio.com/wav-by-the-hobby-now-available-on-itunes/', target='_blank') View Project
-                  button.btn.btn-default.action(data-toggle='modal' data-target='#modalOtakuUx') View Details
+                  button.btn.btn-default.action(data-toggle='modal' data-target='#modalwavUx') View Details
 
         //.row
         .col-xs-12.col-md-4-centered.portfolio-item.portfolio--project.Startup
@@ -108,7 +108,7 @@ section#projects
               .content.text-align-center
               .project_caption Verified
                 .project_blurb
-                  | Verify your professional colleagues, download on iTnes!
+                  | Verify your professional colleagues, download on iTunes!
                   .clearfix
                   a.blurb--link(href='http://www.verified.space/', target='_blank') View Project
                   button.btn.btn-default.action(data-toggle='modal' data-target='#modalOtakuUx') View Details
@@ -155,6 +155,10 @@ section#projects
         include modal/_otakuUx
         include modal/_plusUx
         include modal/_mobileUx
+        include modal/_moseyUx
+        include modal/_plumeUx
+        include modal/_wavUx
+
 
       //- .row
       //-   .col-xs-12.col-md-4-centered.portfolio-item.portfolio--project.Misc
