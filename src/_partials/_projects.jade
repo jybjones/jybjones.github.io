@@ -88,17 +88,17 @@ section#projects
                   button.btn.btn-default.action(data-toggle='modal' data-target='#modalwavUx') View Details
 
         //.row
-        .col-xs-12.col-md-4-centered.portfolio-item.portfolio--project.Startup
-          .project_img
-            img.img-responsive(src='assets/img/projects/startup/popuphood.png', alt='UX work thumbnail')
-            .project
-              .content.text-align-center
-              .project_caption Popuphood
-                .project_blurb
-                  | Small business incubator in Oakland, CA
-                  .clearfix
-                  a.blurb--link(href='http://www.popuphood.com/', target='_blank') View Project
-                  button.btn.btn-default.action(data-toggle='modal' data-target='#modalOtakuUx') View Details
+        //- .col-xs-12.col-md-4-centered.portfolio-item.portfolio--project.Startup
+        //-   .project_img
+        //-     img.img-responsive(src='assets/img/projects/startup/popuphood.png', alt='UX work thumbnail')
+        //-     .project
+        //-       .content.text-align-center
+        //-       .project_caption Popuphood
+        //-         .project_blurb
+        //-           | Small business incubator in Oakland, CA
+        //-           .clearfix
+        //-           a.blurb--link(href='http://www.popuphood.com/', target='_blank') View Project
+        //-           button.btn.btn-default.action(data-toggle='modal' data-target='#modalOtakuUx') View Details
 
       .row
         .col-xs-12.col-md-4-centered.portfolio-item.portfolio--project.Startup
@@ -111,7 +111,7 @@ section#projects
                   | Verify your professional colleagues, download on iTunes!
                   .clearfix
                   a.blurb--link(href='http://www.verified.space/', target='_blank') View Project
-                  button.btn.btn-default.action(data-toggle='modal' data-target='#modalOtakuUx') View Details
+                  button.btn.btn-default.action(data-toggle='modal' data-target='#modalverifiedUx') View Details
 
         //.row
         .col-xs-12.col-md-4-centered.portfolio-item.portfolio--project.WD
@@ -119,12 +119,12 @@ section#projects
             img.img-responsive(src='assets/img/projects/web/snackTn.png', alt='Web  thumbnail')
             .project
               .content.text-align-center
-              .project_caption SnackTN(contributor)
+              .project_caption SnackTN
                 .project_blurb
                   | SnackTN showcases local foods, drinks and makers.
                   .clearfix
                   a.blurb--link(href='http://www.snacktn.com/', target='_blank') View Project
-                  button.btn.btn-default.action(data-toggle='modal' data-target='#modalOtakuUx') View Details
+                  button.btn.btn-default.action(data-toggle='modal' data-target='#modalsnackTNUx') View Details
 
         //.row
         .col-xs-12.col-md-4-centered.portfolio-item.portfolio--project.WD
@@ -137,7 +137,7 @@ section#projects
                   | Mid-term capstone at NSS. Built using Angular and Phaser, this is a fun game with cats in space!
                   .clearfix
                   a.blurb--link(href='http://jybjones.com/SpaceCats/', target='_blank') View Project
-                  button.btn.btn-default.action(data-toggle='modal' data-target='#modalOtakuUx') View Details
+                  button.btn.btn-default.action(data-toggle='modal' data-target='#modalspaceCatsUx') View Details
 
         //.row
         .col-xs-12.col-md-4-centered.portfolio-item.portfolio--project.WD
@@ -150,7 +150,7 @@ section#projects
                   | One of my first projects at NSS using an API
                   .clearfix
                   a.blurb--link(href='http://jybjones.com/WeatherApp/', target='_blank') View Project
-                  button.btn.btn-default.action(data-toggle='modal' data-target='#modalOtakuUx') View Details
+                  button.btn.btn-default.action(data-toggle='modal' data-target='#modalweatherUx') View Details
 
         include modal/_otakuUx
         include modal/_plusUx
@@ -158,6 +158,14 @@ section#projects
         include modal/_moseyUx
         include modal/_plumeUx
         include modal/_wavUx
+        include modal/_verifiedUx
+        include modal/_snackTNUx
+        include modal/_spaceCatsUx
+        include modal/_weatherUx
+
+        //- include modal/_snackTNUx ---ADD POPUPHOOD!!!
+        //- include modal/_snackTNUx ---ADD DITTO!!!
+        //- include modal/_snackTNUx ---ADD Sharebox!!!!
 
 
       //- .row

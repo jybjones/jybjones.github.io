@@ -1,0 +1,18 @@
+extends ../template/_modal
+
+block vars
+  - var modal_id = 'modalweatherUx'
+  - var title = 'Weather App Tells You What To Wear Based On Your Location And Temperature!'
+
+block modal
+  .row
+    .col-sm-12
+      h3.text-align-center WeatherApp&nbsp;
+      h3.text-align-center Technologies Used: JavaScript, jQuery, HTML and CSS/Bootstrap to demonstrate the ability to retrieve the 5-day forecast from a user's zip code from the Weather Underground API.
+    .col-sm-12
+      img.img-responsive(src='assets/img/projects/web/weather.png')
+    .col-sm-12
+      h3.text-align-center The app also uses Geolocation to locate the user's current location to deliver their local temperature current weather condition.
+      h3.text-align-center Future versions will have other features.
+    .col-sm-12
+      a.blurb--link(href='https://github.com/jybjones/WeatherApp', target='_blank') View GitHub
