@@ -4,10 +4,10 @@ block vars
     .modal-content
       .modal-header
         button.close(type='button' data-dismiss='modal' aria-label='Close'): span(aria-hidden='true') &times;
-        h5.modal-title.subhead= title
+        h3.modal-title.subhead= title
 
       .modal-body
-        block content
+        block modal
 
       .modal-footer
         button.btn.btn-primary(type='button' data-dismiss='modal') Close
