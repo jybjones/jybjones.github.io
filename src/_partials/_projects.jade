@@ -6,10 +6,10 @@ section#projects
 
   .filters
       h2 Filter projects by:
-      .filter.UX-project UX Design & Research
-      .filter.Startup-project Startups
-      .filter.WD-project Github Projects
-      .filter.Misc-project Misc...
+      h3.filter.UX-project UX Design & Research
+      h3.filter.Startup-project Startups
+      h3.filter.WD-project Github Projects
+      //- .filter.Misc-project Misc...
       //each row have 3 columns w/3wide divs
       .row.container-small
         .col-xs-12.col-md-3-centered.portfolio-item.portfolio--project.UXP
@@ -47,7 +47,17 @@ section#projects
                   .clearfix
                   //- a.blurb--link(href='#', target='_blank') View Project
                   button.btn.btn-default.action(data-toggle='modal' data-target='#modalplusUx') View Details
-
+        .col-xs-12.col-md-4-centered.portfolio-item.portfolio--project.UXP
+          .project_img
+            img.img-responsive(src='assets/img/projects/startup/popuphood.png', alt='UX work thumbnail')
+            .project
+              .content.text-align-center
+              .project_caption Popuphood
+                .project_blurb
+                  | Small business incubator in Oakland, CA
+                  .clearfix
+                  a.blurb--link(href='http://www.popuphood.com/', target='_blank') View Project
+                  button.btn.btn-default.action(data-toggle='modal' data-target='#modalpopupUx') View Details
       .row
         .col-xs-12.col-md-3-centered.portfolio-item.portfolio--project.Startup
           .project_img
@@ -61,7 +71,6 @@ section#projects
                   a.blurb--link(href='https://www.mosey.com/', target='_blank') View Site
                   button.btn.btn-default.action(data-toggle='modal' data-target='#modalmoseyUx') View Details
 
-        //.row
         .col-xs-12.col-md-4-centered.portfolio-item.portfolio--project.Startup
           .project_img
             img.img-responsive(src='assets/img/projects/startup/plume1.jpg', alt='UX work thumbnail')
@@ -74,7 +83,6 @@ section#projects
                   //- a.blurb--link(href='#', target='_blank') View Project
                   button.btn.btn-default.action(data-toggle='modal' data-target='#modalplumeUx') View Details
 
-        //.row
         .col-xs-12.col-md-4-centered.portfolio-item.portfolio--project.Startup
           .project_img
             img.img-responsive(src='assets/img/projects/startup/wav.png', alt='UX work thumbnail')
@@ -87,20 +95,6 @@ section#projects
                   a.blurb--link(href='http://blog.agilityio.com/wav-by-the-hobby-now-available-on-itunes/', target='_blank') View Project
                   button.btn.btn-default.action(data-toggle='modal' data-target='#modalwavUx') View Details
 
-        //.row
-        //- .col-xs-12.col-md-4-centered.portfolio-item.portfolio--project.Startup
-        //-   .project_img
-        //-     img.img-responsive(src='assets/img/projects/startup/popuphood.png', alt='UX work thumbnail')
-        //-     .project
-        //-       .content.text-align-center
-        //-       .project_caption Popuphood
-        //-         .project_blurb
-        //-           | Small business incubator in Oakland, CA
-        //-           .clearfix
-        //-           a.blurb--link(href='http://www.popuphood.com/', target='_blank') View Project
-        //-           button.btn.btn-default.action(data-toggle='modal' data-target='#modalOtakuUx') View Details
-
-      .row
         .col-xs-12.col-md-4-centered.portfolio-item.portfolio--project.Startup
           .project_img
             img.img-responsive(src='assets/img/projects/startup/verified.png', alt='UX work thumbnail')
@@ -113,7 +107,7 @@ section#projects
                   a.blurb--link(href='http://www.verified.space/', target='_blank') View Project
                   button.btn.btn-default.action(data-toggle='modal' data-target='#modalverifiedUx') View Details
 
-        //.row
+      .row
         .col-xs-12.col-md-4-centered.portfolio-item.portfolio--project.WD
           .project_img
             img.img-responsive(src='assets/img/projects/web/snackTn.png', alt='Web  thumbnail')
@@ -126,7 +120,6 @@ section#projects
                   a.blurb--link(href='http://www.snacktn.com/', target='_blank') View Project
                   button.btn.btn-default.action(data-toggle='modal' data-target='#modalsnackTNUx') View Details
 
-        //.row
         .col-xs-12.col-md-4-centered.portfolio-item.portfolio--project.WD
           .project_img
             img.img-responsive(src='assets/img/projects/web/spaceCats.png', alt='Web  thumbnail')
@@ -139,7 +132,6 @@ section#projects
                   a.blurb--link(href='http://jybjones.com/SpaceCats/', target='_blank') View Project
                   button.btn.btn-default.action(data-toggle='modal' data-target='#modalspaceCatsUx') View Details
 
-        //.row
         .col-xs-12.col-md-4-centered.portfolio-item.portfolio--project.WD
           .project_img
             img.img-responsive(src='assets/img/projects/web/weather.png', alt='Web  thumbnail')
@@ -151,7 +143,7 @@ section#projects
                   .clearfix
                   a.blurb--link(href='http://jybjones.com/WeatherApp/', target='_blank') View Project
                   button.btn.btn-default.action(data-toggle='modal' data-target='#modalweatherUx') View Details
-         //.row
+
         .col-xs-12.col-md-4-centered.portfolio-item.portfolio--project.WD
           .project_img
             img.img-responsive(src='assets/img/projects/web/sharecove.jpg', alt='Web  thumbnail')
@@ -166,6 +158,7 @@ section#projects
 
         include modal/_otakuUx
         include modal/_plusUx
+        include modal/_popupUx
         include modal/_mobileUx
         include modal/_moseyUx
         include modal/_plumeUx
@@ -176,21 +169,4 @@ section#projects
         include modal/_weatherUx
         include modal/_shareboxUx
 
-        //- include modal/_snackTNUx ---ADD POPUPHOOD!!!
         //- include modal/_snackTNUx ---ADD DITTO!!!
-        //- include modal/_snackTNUx ---ADD Sharebox!!!!
-
-
-      //- .row
-      //-   .col-xs-12.col-md-4-centered.portfolio-item.portfolio--project.Misc
-      //-     .project_img
-      //-       img.img-responsive(src='assets/img/projects/web/snackTn.png', alt='Web  thumbnail')
-      //-       .project
-      //-         .content.text-align-center
-      //-         .project_caption Misc Caption
-      //-           .project_blurb
-      //-             | Small Blurb here about project
-      //-             .clearfix
-      //-             a.blurb--link(href='#', target='_blank') View Project
-      //-             button.btn.btn-default.action(data-toggle='modal' data-target='#modalOtakuUx') View Details
-      //-   include modal/_otakuUx

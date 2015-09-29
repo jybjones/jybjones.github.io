@@ -32,7 +32,7 @@ $(document).ready(function() {
   filterProjects("All-project", "All");
   filterProjects("UX-project", "UXP");
   filterProjects("Startup-project", "Startup");
-  filterProjects("Misc-project", "Misc");
+  // filterProjects("Misc-project", "Misc");
   filterProjects("WD-project", "WD");
 });
 
