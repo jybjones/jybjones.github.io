@@ -11,7 +11,7 @@ section#projects
       h3.filter.WD-project Github Projects
       //- .filter.Misc-project Misc...
       //each row have 3 columns w/3wide divs
-      .row.container-small
+      .row
         .col-xs-12.col-md-3-centered.portfolio-item.portfolio--project.UXP
           .project_img
             img.img-responsive(src='assets/img/projects/ux/mobileDev.png', alt='UX work thumbnail')
@@ -47,16 +47,17 @@ section#projects
                   .clearfix
                   //- a.blurb--link(href='#', target='_blank') View Project
                   button.btn.btn-default.action(data-toggle='modal' data-target='#modalplusUx') View Details
-        .col-xs-12.col-md-4-centered.portfolio-item.portfolio--project.UXP
+
+        .col-xs-12.col-md-3-centered.portfolio-item.portfolio--project.UXP
           .project_img
             img.img-responsive(src='assets/img/projects/startup/popuphood.png', alt='UX work thumbnail')
             .project
               .content.text-align-center
-              .project_caption Popuphood
+              .project_caption PopupHood
                 .project_blurb
                   | Small business incubator in Oakland, CA
                   .clearfix
-                  a.blurb--link(href='http://www.popuphood.com/', target='_blank') View Project
+                  button.btn.btn-default.action(href='http://www.popuphood.com/', target='_blank') View Project
                   button.btn.btn-default.action(data-toggle='modal' data-target='#modalpopupUx') View Details
       .row
         .col-xs-12.col-md-3-centered.portfolio-item.portfolio--project.Startup
@@ -68,10 +69,10 @@ section#projects
                 .project_blurb
                   | Mosey is an SF startup where people create adventures.
                   .clearfix
-                  a.blurb--link(href='https://www.mosey.com/', target='_blank') View Site
+                  button.btn.btn-default.action(href='https://www.mosey.com/', target='_blank') View Site
                   button.btn.btn-default.action(data-toggle='modal' data-target='#modalmoseyUx') View Details
 
-        .col-xs-12.col-md-4-centered.portfolio-item.portfolio--project.Startup
+        .col-xs-12.col-md-3-centered.portfolio-item.portfolio--project.Startup
           .project_img
             img.img-responsive(src='assets/img/projects/startup/plume1.jpg', alt='UX work thumbnail')
             .project
@@ -83,7 +84,7 @@ section#projects
                   //- a.blurb--link(href='#', target='_blank') View Project
                   button.btn.btn-default.action(data-toggle='modal' data-target='#modalplumeUx') View Details
 
-        .col-xs-12.col-md-4-centered.portfolio-item.portfolio--project.Startup
+        .col-xs-12.col-md-3-centered.portfolio-item.portfolio--project.Startup
           .project_img
             img.img-responsive(src='assets/img/projects/startup/wav.png', alt='UX work thumbnail')
             .project
@@ -92,10 +93,10 @@ section#projects
                 .project_blurb
                   | wāv app is a new social site to meet people nearby, download on iTunes!
                   .clearfix
-                  a.blurb--link(href='http://blog.agilityio.com/wav-by-the-hobby-now-available-on-itunes/', target='_blank') View Project
+                  button.btn.btn-default.action(href='http://blog.agilityio.com/wav-by-the-hobby-now-available-on-itunes/', target='_blank') View Project
                   button.btn.btn-default.action(data-toggle='modal' data-target='#modalwavUx') View Details
 
-        .col-xs-12.col-md-4-centered.portfolio-item.portfolio--project.Startup
+        .col-xs-12.col-md-3-centered.portfolio-item.portfolio--project.Startup
           .project_img
             img.img-responsive(src='assets/img/projects/startup/verified.png', alt='UX work thumbnail')
             .project
@@ -104,11 +105,11 @@ section#projects
                 .project_blurb
                   | Verify your professional colleagues, download on iTunes!
                   .clearfix
-                  a.blurb--link(href='http://www.verified.space/', target='_blank') View Project
+                  button.btn.btn-default.action(href='http://www.verified.space/', target='_blank') View Project
                   button.btn.btn-default.action(data-toggle='modal' data-target='#modalverifiedUx') View Details
 
       .row
-        .col-xs-12.col-md-4-centered.portfolio-item.portfolio--project.WD
+        .col-xs-12.col-md-3-centered.portfolio-item.portfolio--project.WD
           .project_img
             img.img-responsive(src='assets/img/projects/web/snackTn.png', alt='Web  thumbnail')
             .project
@@ -117,10 +118,10 @@ section#projects
                 .project_blurb
                   | SnackTN showcases local foods, drinks and makers.
                   .clearfix
-                  a.blurb--link(href='http://www.snacktn.com/', target='_blank') View Project
+                  button.btn.btn-default.action(href='http://www.snacktn.com/', target='_blank') View Project
                   button.btn.btn-default.action(data-toggle='modal' data-target='#modalsnackTNUx') View Details
 
-        .col-xs-12.col-md-4-centered.portfolio-item.portfolio--project.WD
+        .col-xs-12.col-md-3-centered.portfolio-item.portfolio--project.WD
           .project_img
             img.img-responsive(src='assets/img/projects/web/spaceCats.png', alt='Web  thumbnail')
             .project
@@ -129,10 +130,10 @@ section#projects
                 .project_blurb
                   | Mid-term capstone at NSS. Built using Angular and Phaser, this is a fun game with cats in space!
                   .clearfix
-                  a.blurb--link(href='http://jybjones.com/SpaceCats/', target='_blank') View Project
+                  button.btn.btn-default.action(href='http://jybjones.com/SpaceCats/', target='_blank') View Project
                   button.btn.btn-default.action(data-toggle='modal' data-target='#modalspaceCatsUx') View Details
 
-        .col-xs-12.col-md-4-centered.portfolio-item.portfolio--project.WD
+        .col-xs-12.col-md-3-centered.portfolio-item.portfolio--project.WD
           .project_img
             img.img-responsive(src='assets/img/projects/web/weather.png', alt='Web  thumbnail')
             .project
@@ -141,10 +142,10 @@ section#projects
                 .project_blurb
                   | One of my first projects at NSS using an API
                   .clearfix
-                  a.blurb--link(href='http://jybjones.com/WeatherApp/', target='_blank') View Project
+                  button.btn.btn-default.action(href='http://jybjones.com/WeatherApp/', target='_blank') View Project
                   button.btn.btn-default.action(data-toggle='modal' data-target='#modalweatherUx') View Details
 
-        .col-xs-12.col-md-4-centered.portfolio-item.portfolio--project.WD
+        .col-xs-12.col-md-3-centered.portfolio-item.portfolio--project.WD
           .project_img
             img.img-responsive(src='assets/img/projects/web/sharecove.jpg', alt='Web  thumbnail')
             .project
@@ -153,7 +154,7 @@ section#projects
                 .project_blurb
                   | Final Capstone Project
                   .clearfix
-                  a.blurb--link(href='http://sharebox-capstone.herokuapp.com/', target='_blank') View Project
+                  button.btn.btn-default.action(href='http://sharebox-capstone.herokuapp.com/', target='_blank') View Project
                   button.btn.btn-default.action(data-toggle='modal' data-target='#modalshareboxUx') View Details
 
         include modal/_otakuUx
